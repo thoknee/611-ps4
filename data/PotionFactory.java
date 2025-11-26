@@ -48,7 +48,7 @@ public class PotionFactory implements ItemFactory<Potion> {
                 String attrRaw = attrBuilder.toString();
                 List<StatType> affected = parseStats(attrRaw);
 
-                System.out.println(affected.toString());
+                // System.out.println(affected.toString());
 
                 Potion potion = new Potion(name, cost, levelReq, effectAmount, affected);
                 potions.add(potion);

@@ -406,6 +406,6 @@ private void openHeroInventoryMenu(Hero h, Scanner sc) {
 
 
     public static void main(String[] args) {
-        new Game().start();
+       
     }
 }

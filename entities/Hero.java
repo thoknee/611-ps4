@@ -34,8 +34,7 @@ public abstract class Hero extends Character{
     protected Armor equippedArmor;
 
 
-    public Hero(String name, int level, int hp, int mana, int strength,
-                int dexterity, int agility,int gold,int exp) {
+    public Hero(String name, int level, int hp, int mana, int strength,int dexterity, int agility,int gold,int exp) {
         super(name, level, hp);
         this.mana = mana;
         this.strength = strength;
@@ -178,19 +177,18 @@ public abstract class Hero extends Character{
 
 
 
-    public void printLevelUp(int oldLevel, int oldHp, int oldMana,
-                                int oldStrength, int oldDexterity, int oldAgility) {
+    public void printLevelUp(int oldLevel, int oldHp, int oldMana, int oldStrength, int oldDexterity, int oldAgility) {
 
-    System.out.println("Congratulations! " + name + " has leveled up! 🎉");
-    System.out.println("Now Level " + oldLevel + "!");
+        System.out.println("Congratulations! " + name + " has leveled up!");
+        System.out.println("Now Level " + oldLevel + "!");
 
-    System.out.printf(" HP       %5d  ->  %5d%n", oldHp, maxHp);
-    System.out.printf(" Mana     %5d  ->  %5d%n", oldMana, maxMana);
-    System.out.printf(" Strength %5d  ->  %5d%n", oldStrength, strength);
-    System.out.printf(" Dexterity%5d  ->  %5d%n", oldDexterity, dexterity);
-    System.out.printf(" Agility  %5d  ->  %5d%n", oldAgility, agility);
+        System.out.printf(" HP       %5d  ->  %5d%n", oldHp, maxHp);
+        System.out.printf(" Mana     %5d  ->  %5d%n", oldMana, maxMana);
+        System.out.printf(" Strength %5d  ->  %5d%n", oldStrength, strength);
+        System.out.printf(" Dexterity%5d  ->  %5d%n", oldDexterity, dexterity);
+        System.out.printf(" Agility  %5d  ->  %5d%n", oldAgility, agility);
     
-}
+    }
 
     
     
@@ -258,14 +256,4 @@ public abstract class Hero extends Character{
             }
         }
 }
-
-
-
-    public String toString() {
-        return name
-                + " (Lv " + level + ", HP " + hp + ", MP " + mana + ", STR " + strength
-                + ", DEX " + dexterity + ", AGI " + agility + ", XP " + exp + ", Gold " + gold + ")";
-    }
-
-
 }

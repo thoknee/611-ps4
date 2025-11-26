@@ -6,8 +6,6 @@
  *  
  */
 
-
-
 package items;
 
 import java.util.ArrayList;
@@ -74,14 +72,5 @@ public class Inventory {
             }
         }
         return result;
-    }
-
-
-    public String toString() {
-        StringBuilder sb = new StringBuilder("Inventory:\n");
-        for (Item i : items) {
-            sb.append("  ").append(i).append("\n");
-        }
-        return sb.toString();
     }
 }

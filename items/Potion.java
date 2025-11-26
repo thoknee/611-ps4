@@ -26,7 +26,7 @@ public class Potion extends Item {
                   int effectAmount,
                   List<StatType> affectedStats) {
 
-        // potions are usually single use
+        // Potions are single use
         super(name, price, levelRequirement, 1);
         this.effectAmount = effectAmount;
         this.affectedStats = new ArrayList<>(affectedStats);

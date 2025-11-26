@@ -73,13 +73,13 @@ public class BattleEngine {
 
         // Check to see who wins and give heroes rewards
         if (allMonstersFainted(enemies)) {
-            System.out.println("\nHEROES WIN THE BATTLE!");
+            System.out.println("\nHeroes Win!");
 
             // Add display for after battle - maybe a continue.
 
             rewardHeroes(party, enemies);
         } else {
-            System.out.println("\n=== ALL HEROES HAVE FALLEN... GAME OVER ===");
+            System.out.println("\nAll heroes have fallen. game over");
         }
     }
 
@@ -485,7 +485,7 @@ public class BattleEngine {
 
 
         double raw = hero.computeAttackDamage(weaponDamage);
-        double reduced = raw - target.getDefense() * 0.035;
+        double reduced = raw - target.getDefense() * 0.03;
         
         return (int) Math.round(reduced);
     }
