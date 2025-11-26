@@ -33,9 +33,9 @@ public class ArmorFactory implements ItemFactory<Armor> {
                     continue;
                 }
 
-                String name   = parts[0];
-                int cost      = Integer.parseInt(parts[1]);
-                int levelReq  = Integer.parseInt(parts[2]);
+                String name = parts[0];
+                int cost = Integer.parseInt(parts[1]);
+                int levelReq = Integer.parseInt(parts[2]);
                 int reduction = Integer.parseInt(parts[3]);
 
                 Armor armor = new Armor(name, cost, levelReq, reduction, 999);

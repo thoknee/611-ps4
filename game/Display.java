@@ -249,7 +249,7 @@ public class Display {
 
     
         );
-        System.out.println("Move carefully, shop wisely, keep your friends close, and your enemies closer");
+        System.out.println("Move carefully, shop wisely, keep your friends close, but your enemies closer");
 
         System.out.println();
     }

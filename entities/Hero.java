@@ -174,9 +174,6 @@ public abstract class Hero extends Character{
     public abstract void levelUp();
 
 
-
-
-
     public void printLevelUp(int oldLevel, int oldHp, int oldMana, int oldStrength, int oldDexterity, int oldAgility) {
 
         System.out.println("Congratulations! " + name + " has leveled up!");

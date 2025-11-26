@@ -25,7 +25,7 @@ public class SorcererFactory extends AbstractHeroFactory<Sorcerer> {
                                   int gold,
                                   int experience) {
         int level = 1;
-        int hp    = level * 100;
+        int hp = level * 100;
 
         return new Sorcerer(name, level, hp, mana,
                             strength, dexterity, agility,

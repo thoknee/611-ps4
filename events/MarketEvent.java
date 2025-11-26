@@ -7,8 +7,6 @@
  * 
  */
 
-
-
 package events;
 
 import entities.Party;

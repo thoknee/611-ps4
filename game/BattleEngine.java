@@ -41,7 +41,7 @@ public class BattleEngine {
     
     // Main battle loop
     public void startBattle(Party party) {
-        System.out.println("=== BATTLE START ===");
+        System.out.println("---BATTLE START---");
 
 
         List<Monster> enemies = createMonstersForBattle(party);
