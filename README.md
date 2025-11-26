@@ -31,5 +31,18 @@ The combat is ultimately turn based as you alternate attacks with the monsters. 
 
 ## General outline of code and system design
 
+- Main.java: creates the instance of the Game
+- Game.java: Creates everything needed for the game(map, heroes, enemies) as well as handles the actual game loop.
+- Abstract "Event":
+   - Battle: an extension of the Event and handles battles
+   - Market: An extension of the Event and handles the buying and selling of gear within a market
+- Entities(Abstract character -> hero, monster)
+   - Extended by each specific type namely paladin, sorcerer, warrior and dragon, exoskeleton, spirit.
+- Items
+   - 
+- Abstract(Hero, monster, potion, item, spell) factory:
+   - As an interface for creating multiple different factories. Each one is in charge of reading the .txt file inputted and creating the associated monsters, items, heroes, etc.)
+
+
    
 
